@@ -27,5 +27,12 @@ namespace TestPatternValidation
             string actual = validation.ValidateEmail("megspn1998@gmail.com");
             Assert.AreEqual(actual, "megspn1998@gmail.com");
         }
+        [Test]
+        public void GivenInputIsString_WhenTestMobileNumber_ShouldReturnMobileNumber()
+        {
+            Validation validation = new Validation();
+            string actual = validation.ValidateMobileNumber("+91 6360139273");
+            Assert.AreEqual(actual, "+91 6360139273");
+        }
     }
 }

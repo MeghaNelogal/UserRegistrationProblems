@@ -38,8 +38,8 @@ namespace TestPatternValidation
         public void GivenInputIsString_WhenTestPassword_ShouldReturnPassword()
         {
             Validation validation = new Validation();
-            string actual = validation.ValidatePassword("Nelogalfamily");
-            Assert.AreEqual(actual, "Nelogalfamily");
+            string actual = validation.ValidatePassword("Nelogalfamily8");
+            Assert.AreEqual(actual, "Nelogalfamily8");
         }
     }
 }

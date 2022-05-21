@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternValidation", "PatternValidation.csproj", "{2BDAC23C-8456-4303-A33F-63F73E57CD37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPatternValidation", "..\TestPatternValidation\TestPatternValidation.csproj", "{E8B0C600-6ADF-49B8-8756-B4C8D7EA0200}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BDAC23C-8456-4303-A33F-63F73E57CD37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BDAC23C-8456-4303-A33F-63F73E57CD37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BDAC23C-8456-4303-A33F-63F73E57CD37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BDAC23C-8456-4303-A33F-63F73E57CD37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B0C600-6ADF-49B8-8756-B4C8D7EA0200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B0C600-6ADF-49B8-8756-B4C8D7EA0200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B0C600-6ADF-49B8-8756-B4C8D7EA0200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B0C600-6ADF-49B8-8756-B4C8D7EA0200}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E988D46-098F-40DA-BFBA-8F7A39435FCA}
+	EndGlobalSection
+EndGlobal

@@ -5,6 +5,8 @@ namespace PatternValidation
     public class Validation
     {
         public const string FIRSTNAME_REGEX = "^[A-Z]{1}[a-zA-Z]{2,}$";
+        public static string EMAIL_REGEX = "^[0-9a-zA-Z]+[.+-_]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}$";
+
         public string ValidateFirstName(string firstname)
         {
             if (Regex.IsMatch(firstname, FIRSTNAME_REGEX))
@@ -28,6 +30,18 @@ namespace PatternValidation
                 Console.WriteLine("Verify Last Name Again");
             }
             return lastname;
+        }
+        public string ValidateEmail(string email)
+        {
+            if (Regex.IsMatch(email, EMAIL_REGEX))
+            {
+                Console.WriteLine("Email Matches");
+            }
+            else
+            {
+                Console.WriteLine("Verify Email Again");
+            }
+            return email;
         }
 
     }

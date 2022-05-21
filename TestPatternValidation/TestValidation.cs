@@ -20,5 +20,12 @@ namespace TestPatternValidation
             string actual = validation.ValidateLastName("Nelogal");
             Assert.AreEqual(actual, "Nelogal");
         }
+        [Test]
+        public void GivenInputIsString_WhenTestEmail_ShouldReturnEmail()
+        {
+            Validation validation = new Validation();
+            string actual = validation.ValidateEmail("megspn1998@gmail.com");
+            Assert.AreEqual(actual, "megspn1998@gmail.com");
+        }
     }
 }

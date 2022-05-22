@@ -41,5 +41,20 @@ namespace TestPatternValidation
             string actual = validation.ValidatePassword("abc@yahoo.com");
             Assert.AreEqual(actual, "abc@yahoo.com");
         }
+        [Test]
+        [TestCase("meghanelogal@gmail.com")]
+        [TestCase("Meghaneloga##l33@gmail.com")]
+        [TestCase("meGHanelogal@gmail.com.in")]
+        [TestCase("megha12nelogal@gmail.com")]
+        [TestCase("shaluelogal@gmail.com.in")]
+        [TestCase("savita12nelogal@gmail.com")]
+        public void GivenInputIsString_WhenTestEmail_ShouldReturnEmailParamerizedTest(string mailAddress)
+        {
+            Validation validation = new Validation();
+            string actual = validation.ValidateEmailParametrized(mailAddress);
+            Assert.AreEqual(actual, mailAddress);
+
+        }
     }
+
 }
